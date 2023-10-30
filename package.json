@@ -1,0 +1,24 @@
+{
+  "name": "slack-bot-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.14.0",
+    "@slack/web-api": "^6.9.0",
+    "dayjs": "^1.11.9",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "node-schedule": "^2.1.1",
+    "slack-node": "^0.1.8"
+  }
+}
