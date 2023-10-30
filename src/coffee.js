@@ -168,7 +168,7 @@ const fireByFile = (fire, textFile) => {
     });
 };
 
-export const executeCoffeeBot = async (text, fire, count) => {
+export const executeBoltCoffeeBot = async (text, fire, count) => {
   const TXT_FILE = './coffee-chat.txt';
   const today = new dayjs();
   const startDate = new dayjs('2023-07-31');
@@ -187,6 +187,13 @@ export const executeCoffeeBot = async (text, fire, count) => {
 
     return;
   }
+
+  fireByFile(fire, TXT_FILE);
+  return;
+};
+
+export const executeSchedulerCoffeeBot = async (fire) => {
+  const TXT_FILE = './coffee-chat.txt';
 
   fireByFile(fire, TXT_FILE);
   return;

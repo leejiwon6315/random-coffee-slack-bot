@@ -1,7 +1,7 @@
 import pkg from '@slack/bolt';
 import dotenv from 'dotenv';
 
-import { executeCoffeeBot } from './src/coffee.js';
+import { executeBoltCoffeeBot } from './src/coffee.js';
 import { GET_COFFEE, SUDO_OPEN, SUDO_WITH_ALIAS } from './src/message.js';
 
 const { App } = pkg;
@@ -19,13 +19,13 @@ const app = new App({
 let count = false;
 
 app.message(SUDO_OPEN || SUDO_WITH_ALIAS, ({ _, say }) => {
-  executeCoffeeBot(SUDO_OPEN, say, count);
+  executeBoltCoffeeBot(SUDO_OPEN, say, count);
 
   return;
 });
 
 app.message(GET_COFFEE, ({ _, say }) => {
-  executeCoffeeBot(GET_COFFEE, say, count);
+  executeBoltCoffeeBot(GET_COFFEE, say, count);
 
   count = true;
   return;
