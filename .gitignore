@@ -6,5 +6,6 @@ yarn-error.log*
 
 constants.js
 coffee-chat.txt
+.env
 
 .gitconfig-work
