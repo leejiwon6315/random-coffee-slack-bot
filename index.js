@@ -1,8 +1,8 @@
 import pkg from '@slack/bolt';
 import dotenv from 'dotenv';
 
-import { executeCoffeeBot } from './coffee.js';
-import { GET_COFFEE, SUDO_OPEN, SUDO_WITH_ALIAS } from './message.js';
+import { executeCoffeeBot } from './src/coffee.js';
+import { GET_COFFEE, SUDO_OPEN, SUDO_WITH_ALIAS } from './src/message.js';
 
 const { App } = pkg;
 
